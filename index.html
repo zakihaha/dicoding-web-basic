@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muh Zaki Choiruddin</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-title">Zaki</div>
+            <ul class="nav-links">
+                <input type="checkbox" id="toggle" />
+                <label for="toggle" class="icon">&#9776;</label>
+                <div class="menus">
+                    <li><a href="#artikel">Artikel</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#jadwal">Jadwal</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div id="content">
+            <h1 class="greeting">Selamat Datang!</h1>
+            <div id="artikel" class="article-list">
+                <p class="text-info">Artikel terbaru ~</p>
+                <article>
+                    <h1 class="article-title">Pengalaman Belajar Pemrograman Secara Otodidak</h1>
+                    <p>Memulai pemrograman sejak bangku SMK, aku dulu masuk di jurusan TKJ. Kebanyakan pelajaran disana
+                        adalah jaringan, namun aku memberanikan diri untuk belajar coding sendiri...</p>
+                </article>
+
+                <article>
+                    <h1 class="article-title">Kisah Pertama Kali Melaksanakan Magang</h1>
+                    <p>Ketika kelas 2 SMK aku magang di sebuah company kota Yogyakarta. Disana aku banyak belajar mengenai
+                        komputer, kenal dengan para ahli IT membuatku sangat bersemangat...</p>
+                </article>
+
+                <article class="article-hide">
+                    <h1 class="article-title">Menjadi Backend Developer yang Handal</h1>
+                    <p>Banyak orang berkata bahwa matematika itu penting untuk menjadi seorang developer, namun faktanya 
+                        tidak terlalu. Di dalam dunia pemrograman yang nomor 1 diperlukan adalah logika...</p>
+                </article>
+
+                <button class="btn" id="btn-more" onclick="more()">Lainnya...</button>
+            </div>
+
+            <div id="skill" class="skill-list">
+                <p class="text-info">Daftar skill (klik) ~</p>
+                <div class="flex-row">
+                    <div onclick="skill('Figma')">
+                        <img class="img-list" src="assets/img/figma.png" alt="">
+                    </div>
+                    <div onclick="skill('Bootstrap')">
+                        <img class="img-list" src="assets/img/bootstrap.png" alt="">
+                    </div>
+                    <div onclick="skill('Laravel')">
+                        <img class="img-list" src="assets/img/laravel.png" alt="">
+                    </div>
+                    <div onclick="skill('Vue JS')">
+                        <img class="img-list" src="assets/img/vuejs.png" alt="">
+                    </div>
+                </div>
+                <p class="skill-name">Nama: <span id="skill-title">..</span> </p>
+            </div>
+
+            <div id="jadwal" class="schedule">
+                <p class="text-info">Jadwal belajar ~</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Waktu</th>
+                            <th colspan="4">Hari</th>
+                        </tr>
+                        <tr>
+                            <th>Senin</th>
+                            <th>Selasa</th>
+                            <th>Kamis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08.00</td>
+                            <td>PHP</td>
+                            <td>HTML</td>
+                            <td>Javascript</td>
+                        </tr>
+                        <tr>
+                            <td>10.00</td>
+                            <td>Node JS</td>
+                            <td>MySQL</td>
+                            <td>Python</td>
+                        </tr>
+                        <tr>
+                            <td>14.00</td>
+                            <td>Javascript</td>
+                            <td>PHP</td>
+                            <td>CSS</td>
+                        </tr>
+                        <tr>
+                            <td>19.00</td>
+                            <td>Python</td>
+                            <td>HTML</td>
+                            <td>React</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+            <div id="kontak">
+                <p class="text-info">Kontak saya ~</p>
+                <div class="box-contact">
+                    <form action="">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="text" class="form-control" placeholder="Masukkan email Anda">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Subject</label>
+                            <input type="text" class="form-control" placeholder="Masukkan subject pesan">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Isi</label>
+                            <textarea type="text" class="form-control" rows="6"
+                                placeholder="Masukkan isi email"></textarea>
+                        </div>
+                        <button class="btn">Kirim!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <aside>
+            <img class="zaki-profile" src="assets/img/zaki.jpg" alt="">
+            <div class="bio">
+                <p>Muh Zaki Choiruddin</p>
+                <p>Universitas Amikom Yogyakarta</p>
+                <p>Klaten, Jawa Tengah</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        Developed with Happiness
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

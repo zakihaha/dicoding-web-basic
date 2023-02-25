@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Poppins, roboto;
+    background-color: #f7f8fc;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.hide {
+    display: none;
+}
+
+input[type=checkbox]#toggle {
+    display: none;
+}
+
+.icon {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.container {
+    padding: 80px 120px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 120px;
+    background-color: #0f1725;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+.nav-title {
+    font-size: 32px;
+}
+
+.menus {
+    font-size: 16px;
+    display: flex;
+    gap: 1em;
+}
+
+.menus li {
+    padding: 5px 15px;
+}
+
+.menus li:hover {
+    background-color: #b9d7ff;
+    border-radius: 5px;
+}
+
+.menus li:hover a {
+    color: #000000;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: #0f1725;
+    color: white;
+    gap: 60px;
+}
+
+#content {
+    flex-basis: 65%;
+}
+
+aside {
+    color: white;
+    flex-basis: 35%;
+    background-color: #0c1320;
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px;
+    height: fit-content;
+    position: fixed;
+    right: 120px;
+}
+
+.greeting {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.text-info {
+    font-size: 14px;
+    color: #a7abb9;
+    margin-bottom: 15px;
+}
+
+.article-hide {
+    display: none;
+}
+
+.article-hide.show {
+    display: block;
+}
+
+article {
+    border-radius: 20px;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+
+.article-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-list article {
+    background: #5673f1;
+    flex-grow: 1;
+}
+
+.article-title {
+    margin-bottom: 5px;
+}
+
+.zaki-profile {
+    width: 180px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.skill-list {
+    margin: 50px 0;
+}
+
+.skill-name {
+    margin-top: 10px;
+}
+
+.img-list {
+    height: 60px;
+    margin-right: 40px;
+    flex-grow: 1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table thead tr {
+    background-color: #28b394;
+    color: #ffffff;
+}
+
+table th,
+table td {
+    border: 1px solid #dddddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#kontak {
+    margin-top: 50px;
+}
+
+.box-contact {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px 60px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-label {
+    color: #0c1320;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    border: 1px solid #c7c7c7;
+    display: block;
+    width: 100%;
+}
+
+.form-control:focus {
+    outline: none;
+    border: 1px solid #5673f1;
+    box-shadow: 0px 0px 6px #5673f1;
+}
+
+.btn {
+    padding: 12px 20px;
+    background-color: #ed4553;
+    font-weight: 700;
+    border-radius: 20px;
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #d12f3d;
+}
+
+footer {
+    background: #5e80fe;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (max-width: 1080px) {
+    aside {
+        right: 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        position: unset;
+        right: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menus {
+        display: none;
+        position: absolute;
+        background-color: #111c30;
+        top: 80px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menus li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.3s ease;
+    }
+    
+    .menus li+li {
+        margin-top: 12px;
+    }
+    
+    .icon {
+        display: block;
+    }
+    
+    input[type=checkbox]:checked~.menus {
+        display: block;
+    }
+    
+    .container {
+        padding: 60px 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 20px 30px;
+    }
+    .container {
+        padding: 60px 30px;
+    }
+}
